@@ -1,0 +1,148 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 0;
+}
+
+h2 {
+  font-size: 6rem;
+  line-height: 0;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#layout {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#clock {
+  margin-top: auto;
+}
+
+#quotes {
+  width: 30%;
+  margin-top: auto;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+#quotes > span:nth-of-type(1) {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#weather {
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+}
+
+#wrap-form {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 20%;
+  height: 30%;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+#todo-form {
+  width: 100%;
+}
+
+#todo-form > input {
+  width: 100%;
+  border: inherit;
+  border-bottom: 1.5px solid black;
+  border-radius: inherit;
+  background-color: inherit;
+}
+
+#todo-form > input:focus {
+  outline: 0;
+}
+
+#todo-form span {
+  color: black;
+}
+
+#todo-list li {
+  margin: 0.5rem 0;
+}
+
+#todo-list span {
+  color: black;
+}
+
+#todo-list button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#todo-list > li:hover button {
+  background-color: rgba(187, 187, 187, 0.8);
+}
+
+/* #weather,
+#todo-list {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+} */
